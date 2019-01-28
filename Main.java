@@ -1,15 +1,21 @@
 public class Main {
 
     public static void main(String[] args) {
-           Main bj = new Main();
-           bj.kell();
-    }
+         Bujursangkar persegil=new Bujursangkar();
+         Lingkaran lingkaranl = new Lingkaran();
 
-    public int sisi = 10;
-    public double kel;
+         persegil.setsisi(10);
+         persegil.Hitungkelo();
 
-    public void kell(){
-        kel = 4 * sisi;
-        System.out.println("Keliling bujur sangkar = " + kel);
+         lingkaranl.setRadius(50);
+         lingkaranl.Hitung();
+
+         System.out.println();
+        System.out.println("------");
+        System.out.println("panjang sisi bujur sangkar : "+persegil.getsisi()+"cm");
+        System.out.println("keliling bujur sangkar :"+persegil.getkeliling()+"cm");
+        System.out.println("-------");
+        System.out.println("jari-jari lingkaran : " + lingkaranl.getRadius()+"cm" );
+        System.out.println("keliling lingkaran : " +lingkaranl.getkeliling()+"cm");
     }
 }
